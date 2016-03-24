@@ -1,0 +1,154 @@
+body {
+	background-image: url('../images/kitchen.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+input,
+button {
+	border:none;
+}
+
+.container {
+	margin:0 auto;
+	margin-top:2rem;
+	width:500px;
+	height:auto;
+	max-height:700px;
+	background-color:white;
+	border:6px solid #cfcaca;
+	padding-bottom:2rem;
+}
+
+.list-header {
+	margin:0 auto;
+	padding-top:15px;
+	padding-bottom:50px;
+	height:auto;
+	width:90%;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+	letter-spacing:1;
+	line-height: 1.3;
+	font-family:'Raleway';
+	letter-spacing: 3px;
+}
+
+.list-input-container {
+	margin:0 auto;
+	height:2rem;
+	padding:.3rem;
+	width:350px;
+}
+
+.list-input {
+	float:left;
+	width:300px;
+	padding:5px 5px 5px 0;
+	margin-right:5px;
+	height:20px;
+}
+
+.add {
+	height:34px;
+	width:34px;	
+	margin: 0 auto;
+	margin-top:-2px;
+	display: inline;
+	color: #333;
+	/*background-color:#e6ffcc;*/
+	background: linear-gradient(top, #eee, #ccc);
+	font-size:1.4rem;
+	border:2px solid #777;
+	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+}
+
+.add:hover {
+	cursor:pointer;
+}
+
+
+.list-content {
+	max-height:475px;
+	height:auto;
+	overflow-y:scroll;
+	width:90%;
+	margin:0 auto;
+
+}
+
+.list-content::-webkit-scrollbar { 
+    display: none; 
+}
+
+.list-item,
+.checked {
+	width:100%;
+	margin:0 auto;
+	height:auto;
+	padding:5px;
+	/*background-color: #cfcaca;*/
+	border-bottom:1px solid #cfcaca;
+	cursor:pointer;
+}
+
+.list-item,
+.checked,
+h1 {
+	/*no text selection*/
+	-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+   cursor:default;
+}
+
+
+.check {
+	float:left;
+	width:auto;
+	margin-right:10px;
+	width:25px;
+	height:25px;
+}
+
+.item-name {
+	display: inline;
+	font-size:1.4rem;
+	font-family: 'Titillium Web'; 
+}
+
+.delete {
+	margin:0;
+	width:25px;
+	height:25px;
+	float:right;
+	display: inline;
+	margin-right:10px;
+	margin-top:3px;
+	background: none;
+	/*border:1px solid black;	*/
+}
+
+.delete:hover {
+	color:red;
+	cursor:pointer;
+}
+
+input {
+	border-radius:5px;
+}
+
+button {
+	border-radius:5px;
+}
+
+.checked {
+	text-decoration: line-through;
+}
